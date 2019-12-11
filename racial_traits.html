@@ -1,118 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Freedom RPG</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Raça</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <!--[if lte IE 8]>
+                <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+            <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <link rel="stylesheet" href="css/layouts/style.css">
+    <!--<![endif]-->
 </head>
 
 <body>
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
 
-    <div id="wrapper" class ="toggled offset-2">
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="#">Freedom RPG</a>
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="index.html">
-                        Freedom RPG
-                    </a>
-                </li>
-                <li>
-                    <a href="skills_and_training.html">Habilidades e Treinamento</a>
-                </li>
-                <li>
-                    <a href="adventure_levels.html">Níveis de Aventura</a>
-                </li>
-                <li>
-                    <a href="remarkable_traits.html">Características Marcantes</a>
-                </li>
-                <li>
-                    <a href="destino_points.html">Pontos de Destino</a>
-                </li>
-                <li>
-                    <a href="racial_traits.html">Raças</a>
-                </li>
-                <li>
-                    <a href="special_traits.html">Características Especiais</a>
-                </li>
-                <li>
-                    <a href="scaling.html">Escala</a>
-                </li>
-            </ul>
+                <ul class="pure-menu-list">
+                    <li class="sidebar-brand">
+                        <a class="pure-menu-link" href="index.html">
+                                Inicio
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="skills_and_training.html">Habilidades e Treinamento</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="adventure_levels.html">Níveis de Aventura</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="remarkable_traits.html">Características Marcantes</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="destino_points.html">Pontos de Destino</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="racial_traits.html">Raças</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="special_traits.html">Características Especiais</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="scaling.html">Escala</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="col-md-6">
+        <div id="main">
+            <div class="header">
                 <h1>Raças</h1>
-                
-                <p> 
-                    Com base na quantidade de pontos que a aventura permitir que os personagens tenham, é possível 
-                    determinar o número de habilidades e seu nível de capacidade ao utilizar elas. Todos os personagens 
-                    tem por padrão a utilização de 1d6 (um dado de 6 lados), diferentes níveis de treinamento permitem 
-                    utilizar mais dados.
+            </div>
+            <div class="content">
+
+                <p>
+                    Com base na quantidade de pontos que a aventura permitir que os personagens tenham, é possível determinar o número de habilidades e seu nível de capacidade ao utilizar elas. Todos os personagens tem por padrão a utilização de 1d6 (um dado de 6 lados),
+                    diferentes níveis de treinamento permitem utilizar mais dados.
                 </p>
 
-                <p> 
-                    Treinado – Você até que sabe fazer algumas coisas relacionada a essa habilidade – 
-                    Um dado adicional, num total de 2d6
+                <p>
+                    Treinado – Você até que sabe fazer algumas coisas relacionada a essa habilidade – Um dado adicional, num total de 2d6
                 </p>
-                    Experiente – Já possui uma certa prática,  consegue fazer mais coisas que muitos outros – 
-                    Dois dados adicionais, total de 3d6
+
+                <p>Experiente – Já possui uma certa prática, consegue fazer mais coisas que muitos outros – Dois dados adicionais, total de 3d6
                 </p>
-                    Mestre – Você é conhecido e reconhecido por essa habilidade, poucos são melhores do que você. – 
-                    Três dados, total de 4d6
-                </p>
-                <p> 
-                    Porque não números fixos?
-                    O objetivo é que a ficha se mantenha sem número, sem pontos. Pessoas reais não são medidas em pontos, 
-                    você não tem 5 pontos em agilidade ou tem +4 em um ataque, o que define o que uma pessoa sabe ou não 
-                    o que fazer é o quanto ela treinou algo.
+
+                <p>Mestre – Você é conhecido e reconhecido por essa habilidade, poucos são melhores do que você. – Três dados, total de 4d6
                 </p>
                 <p>
-                    E para o caso de habilidades inerentes?
-                    Você pode mudar o nome da ordem de desenvolvimento das habilidades, poderia ser algo como 
-                    Capaz, Hábil e Superior, em alguns casos, como por exemplo na habilidade intimidar, 
-                    pessoas acham estranho que alguém seja treinado. Criar novos nomes para os níveis de treinamento
-                    de habilidades é permitido, desde que seja visto com o mestre antes.
+                    Porque não números fixos? O objetivo é que a ficha se mantenha sem número, sem pontos. Pessoas reais não são medidas em pontos, você não tem 5 pontos em agilidade ou tem +4 em um ataque, o que define o que uma pessoa sabe ou não o que fazer é o quanto
+                    ela treinou algo.
                 </p>
                 <p>
-                    Quando os dados serão usados?
-                    A rolagem de dados deve ser utilizada contra a Tabela de Dificuldades ou contra testes opostos.
+                    E para o caso de habilidades inerentes? Você pode mudar o nome da ordem de desenvolvimento das habilidades, poderia ser algo como Capaz, Hábil e Superior, em alguns casos, como por exemplo na habilidade intimidar, pessoas acham estranho que alguém seja
+                    treinado. Criar novos nomes para os níveis de treinamento de habilidades é permitido, desde que seja visto com o mestre antes.
+                </p>
+                <p>
+                    Quando os dados serão usados? A rolagem de dados deve ser utilizada contra a Tabela de Dificuldades ou contra testes opostos.
                 </p>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
-
+        <script src="js/ui.js"></script>
 </body>
 
 </html>

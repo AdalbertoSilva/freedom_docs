@@ -1,0 +1,17 @@
+table th {
+    font-size: 12px !important;
+    table-layout: fixed;
+    width: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+}
+
+div p {
+    text-indent: 30px;
+}

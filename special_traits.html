@@ -1,86 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Freedom RPG</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Níveis de Aventura</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <!--[if lte IE 8]>
+                <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+            <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <link rel="stylesheet" href="css/layouts/style.css">
+    <!--<![endif]-->
 </head>
 
 <body>
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <span></span>
+        </a>
 
-    <div id="wrapper" class ="toggled">
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="#">Freedom RPG</a>
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="index.html">
-                        Freedom RPG
-                    </a>
-                </li>
-                <li>
-                    <a href="skills_and_training.html">Habilidades e Treinamento</a>
-                </li>
-                <li>
-                    <a href="adventure_levels.html">Níveis de Aventura</a>
-                </li>
-                <li>
-                    <a href="remarkable_traits.html">Características Marcantes</a>
-                </li>
-                <li>
-                    <a href="destino_points.html">Pontos de Destino</a>
-                </li>
-                <li>
-                    <a href="racial_traits.html">Raças</a>
-                </li>
-                <li>
-                    <a href="special_traits.html">Características Especiais</a>
-                </li>
-                <li>
-                    <a href="scaling.html">Escala</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <h1>Níveis de Aventura</h1>
-                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+                <ul class="pure-menu-list">
+                    <li class="sidebar-brand">
+                        <a class="pure-menu-link" href="index.html">
+                                Inicio
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="skills_and_training.html">Habilidades e Treinamento</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="adventure_levels.html">Níveis de Aventura</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="remarkable_traits.html">Características Marcantes</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="destino_points.html">Pontos de Destino</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="racial_traits.html">Raças</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="special_traits.html">Características Especiais</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="scaling.html">Escala</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+        <div id="main">
+            <div class="header">
+                <h1>Características Marcantes</h1>
+            </div>
+            <div class="content">
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <blockquote class="blockquote">
+                    "Me responda agora, em poucas palavras, o que é seu personagem."
+                </blockquote>
+                <p>
+                    Características marcantes são o que definem os personagens, os locais ou qualquer outra coisa que exista, neste mundo ou em qualquer outro (desde que seja em relação a este sistema). Se você disser que é um 'Elfo do Deserto', que 'Deseja conhecer todo
+                    o mundo' e 'É capaz de achar um rato em uma tempestade' é assim que será o personagem.
+                </p>
+                <p>
+                    Todas as suas habilidades devem ser pensadas em relação a isso e cada vez que você realizar uma boa interpretação ou então sofre algo relacionado a suas características marcantes, você recebe um ponto de destino, ponto esse que poderá gastar nas rolagens
+                    de suas características marcantes.
+                </p>
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+                <h2>Características Marcantes Mudam</h2>
+                <p>
+                    Você pode ser um músico, que de repente se tornou famoso, sendo assim a alcunha de 'Músico Famoso' seria apropriada. É possível que você tenha sido um guarda importante, até ser 'Flechado no Joelho'. Enfim, tudo muda, seja por pouco tempo, ou para sempre.
+                </p>
 
+                <h2>Características Marcantes não são exclusividade de personagens dos jogadores</h2>
+
+                <blockquote class="blockquote">
+                    "...se forma um silêncio no ambiente, o 'Necromante' já estava formando um sorriso cínico em seu rosto, enquanto a fumaça criada pela sua rajada necrótica, utilizada para abater o cavaleiro de armadura branca, mas o seu rosto consegue se tornar ainda
+                    mais pálido ao perceber que o homem não havia caído, tenta balbuciar algo, mas é a voz do 'Paladino' que é escutada. - Não cairei, não hoje e nem nunca, enquanto estiver sob a guarda do Grande Sol."
+                </blockquote>
+                <blockquote class="blockquote">
+                    "Ishtar, conhecida como 'A cidade Anel' possui seu nome devido ao material, conhecido por ser virtualmente indestrutível para representar a união entre diversas raças, aliadas para enfrentar um inimigo comum, que jaz no passado. Apesar de ser criada no
+                    meio do nada, é comum dizerem que 'A Cidade que Possui de Tudo' e talvez por isso seja normal 'Acabar Esbarrando com Alguém Conhecido' por aqui, apesar de seu tamanho gigantesco. Achei melhor eu dizer isso antes, mas você verá de qualquer
+                    forma."
+                </blockquote>
+                <blockquote class="blockquote">
+                    "- Um jogo em um 'beco escuro'? O que pretende, donzela de cabelo vermelho - Perguntou o meio-elfo, olhando fixamente para a 'Misteriosa' mulher. - Vencer, apenas 'Seguindo as Regras do Jogo' poderá ter a sua alma de volta."
+                </blockquote>
+            </div>
+        </div>
+
+        <script src="js/ui.js"></script>
 </body>
 
 </html>
